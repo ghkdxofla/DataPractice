@@ -1,0 +1,21 @@
+<!dictype html>
+<html>
+    <head>
+        <style>
+            div {border:1px solid #aaaaaa;width:800px;height:200px;opacity:0.5;background-color:#aaaaaa;}
+            #div2 {width:200px;height:500px;float:left;background-color:red;}
+            #div3 {width:200;height:500px;float:right;background-color:blue;}
+            #div4 {clear:both}
+            /* 굳이 테이블로 안하고 clear로 float를 없애주면, float가 아닌 div1 아래에 붙던 애가 맨 아래로 붙게 됨 */
+           #div1 + div {clear:both;content:"";display:table}
+        </style>
+    </head>
+    <body>
+        <div id="div1">Header</div>
+        <div>
+            <div id="div2">Side</div>
+            <div id="div3">Content</div>
+        </div>
+        <div id="div4">Footer</div>
+    </body>
+</html>

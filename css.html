@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div {background-color:rgba(255, 0, 0, .3);
+                border:1px solid #aaaaaa;}
+            #id1 {position:relative;height:50px;background-color:#bbbbbb;}
+            #id2 {position:absolute;top:100px;left:200px;}
+            #id3 {position:fixed;top:100px;left:200px;}
+            #id {color:rgb(0, 0, 255);}
+            #id1 > ul{position:absolute;top:50px;left:200px;border:1px solid #aaaaaa;display:none;}
+            #id1:hover > ul{display:block;}
+            .class {background-color:yellow;}
+            div + p.class {background-color:green;}
+            p.class {font-family:"맑은고딕", "Malgun Gothic", BatangChe, Sans-serif;
+                    font-size: 2.0em;}
+            /* 순서대로 먼저 적용되고, 없으면 다음 것이 적용됨 */
+        </style>
+    </head>
+    <body>
+        <!--
+        <div id="id">Content1</div>
+        <div class="class">Content2</div>
+        <p class="class">Content3</p>
+        -->
+        <div id="id1">
+            <ul>
+                 <li>메뉴1</li>
+                 <li>메뉴2</li>
+            </ul>
+                 
+         </div>
+        <div id="id2">Content2</div>
+        <div id="id3">Content3</div>
+    </body>
+</html>

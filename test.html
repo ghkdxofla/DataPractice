@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <!-- 위의 meta tag만 title 위에 쓰고 나머지는 아래에 씀 -->
+        <!-- 빠르게 문자열 세팅을 해주려고 -->
+        <title>Simple HTML doc.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="실습, 데이터진흥원, 수업"/>
+        <!-- 위의 meta 키워드에서 content내의 내용이 바로 태그 -->
+        <script>
+            var car = {"make" : "Volkswagen"};
+            car.year = '2003';
+            console.log(car);
+        </script>
+        <style>
+            * {margin:0;padding:0;}
+            header {background-color:#f1f1f1;text-align:center;}
+            header > h1 {padding:20px;}
+            nav {overflow:hidden;background-color:#333;}
+            nav li {display:block;float:left;padding:14px 16px;color:#f2f2f2;text-align:center;}
+            nav li:hover {background-color:#ddd;color:black;}
+            main > section {float:left;width:60%;}
+            main > aside {float:right;width:30%;}
+            main > section, main > aside {background-color:#aaa;margin-top:20px;padding:10px}
+            main > section > article, main > aside > section {padding:20px;margin:20px;background-color:white;}
+            article > section {background-color:#aaa;}
+            p {padding:10px 0;text-align:center;border:1px solid #000;}
+        </style>
+    </head>
+    <body>
+        <main>
+        <!-- main은 꽉 찬 화면, 중요하게 다룰 단위의 화면 잡을 때 쓴다 -->
+            <header>
+                <h1>Header</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            
+            <section>
+                <article>
+                    <h1>Title</h1>
+                    <p>Content</p>
+                </article>
+                <article>
+                    <h1>Title</h1>
+                    <section>
+                        <h1>Sub title1</h1>
+                        <p>Sub content1</p>
+                    </section>
+                    <section>
+                        <h1>Sub title2</h1>
+                        <p>Sub content2</p>
+                    </section>
+                </article>
+            </section>
+            <aside>
+                <section>
+                    <h1>Advertisement</h1>
+                    <p>Content</p>
+                </section>
+                <section>
+                    <h1>Advertisement</h1>
+                    <p>Content</p>
+                </section>
+            </aside>
+            <footer>
+            </footer>
+        </main>
+
+    </body>
+</html>
